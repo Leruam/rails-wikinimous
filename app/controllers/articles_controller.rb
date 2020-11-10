@@ -8,6 +8,10 @@ class ArticlesController < ApplicationController
     set_article
   end
 
+  def new
+    @article = Article.new
+  end
+
   private
 
   def article_params
